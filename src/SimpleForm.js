@@ -1,15 +1,9 @@
 import React from 'react';
-import {View} from 'react-native';
 
-import {ScrollViewForm} from './components';
-import {CommonStyles} from './constants';
+import {ScrollViewForm} from './components/index';
 
 const SimpleForm = () => {
-  return (
-    <View style={CommonStyles.flexRoot}>
-      <ScrollViewForm />
-    </View>
-  );
+  return <ScrollViewForm />;
 };
 
 export default SimpleForm;

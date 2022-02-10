@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {ScrollView, TextInput, StyleSheet, Text, Alert} from 'react-native';
+import {Text, TextInput, ScrollView, StyleSheet, Alert} from 'react-native';
 
 import {CustomButton, FlatListForm} from '.';
-import {CommonStyles} from '../constants';
+import {CommonStyles} from '../constants/index';
 
 const ScrollViewForm = () => {
   const [firstName, setFirstName] = useState('');
@@ -36,6 +36,7 @@ const ScrollViewForm = () => {
 
       <TextInput
         placeholder="Email Address"
+        keyboardType="email-address"
         style={STYLE.input}
         onChangeText={text => {
           setEmail(text);
@@ -47,21 +48,12 @@ const ScrollViewForm = () => {
         placeholder="Age"
         keyboardType="numeric"
         style={STYLE.input}
-        nChangeText={text => {
+        onChangeText={text => {
           setAge(text);
         }}
         value={age}
       />
-
       <TextInput placeholder="Phone Number" style={STYLE.input} />
-
-      <TextInput placeholder="House No." style={STYLE.input} />
-
-      <TextInput placeholder="City" style={STYLE.input} />
-
-      <TextInput placeholder="District" style={STYLE.input} />
-
-      <TextInput placeholder="Province" style={STYLE.input} />
 
       <CustomButton
         onPress={() => {
@@ -81,14 +73,14 @@ const ScrollViewForm = () => {
         }}
         title="Add User"
       />
-      <FlatListForm formPData={formData} />
+      <FlatListForm Fdata={formData} />
     </ScrollView>
   );
 };
 
 const STYLE = StyleSheet.create({
   text: {
-    fontSize: 25,
+    fontSize: 22,
     fontWeight: 'bold',
     margin: 10,
     color: 'black',
