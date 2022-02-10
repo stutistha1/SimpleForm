@@ -1,5 +1,5 @@
 import CustomButton from './CustomButton';
-import ScrollViewExample from './ScrollViewExample';
-import FlatListExample from './FlatlistExample';
+import ScrollViewForm from './ScrollViewForm';
+import FlatListForm from './FlatListForm';
 
-export {CustomButton, ScrollViewExample, FlatListExample};
+export {CustomButton, ScrollViewForm, FlatListForm};

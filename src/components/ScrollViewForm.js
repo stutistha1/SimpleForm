@@ -3,9 +3,8 @@ import {ScrollView, TextInput, StyleSheet, Text} from 'react-native';
 
 import {CustomButton} from '.';
 import {CommonStyles} from '../constants';
-import FlatListExample from './FlatlistExample';
 
-const ScrollViewExample = () => {
+const ScrollViewForm = () => {
   return (
     <ScrollView style={CommonStyles.flexRoot}>
       <Text style={STYLE.text}>NEW USER FORM</Text>
@@ -28,7 +27,7 @@ const ScrollViewExample = () => {
 
       <TextInput placeholder="Province" style={STYLE.input} />
 
-      <CustomButton title="Add User" onPress={FlatListExample} />
+      <CustomButton title="Add User" />
     </ScrollView>
   );
 };
@@ -49,4 +48,4 @@ const STYLE = StyleSheet.create({
   },
 });
 
-export default ScrollViewExample;
+export default ScrollViewForm;

@@ -1,16 +1,16 @@
 import React from 'react';
 import {View} from 'react-native';
 
-import {ScrollViewExample, FlatListExample} from './components';
+import {ScrollViewForm, FlatListForm} from './components';
 import {CommonStyles} from './constants';
 
-const SampleApp = () => {
+const SimpleForm = () => {
   return (
     <View style={CommonStyles.flexRoot}>
-      <ScrollViewExample />
-      <FlatListExample />
+      <ScrollViewForm />
+      <FlatListForm />
     </View>
   );
 };
 
-export default SampleApp;
+export default SimpleForm;

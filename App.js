@@ -1,9 +1,9 @@
 import React from 'react';
 
-import SampleApp from './src/SampleApp';
+import SimpleForm from './src/SimpleForm';
 
 const App = () => {
-  return <SampleApp />;
+  return <SimpleForm />;
 };
 
 export default App;
