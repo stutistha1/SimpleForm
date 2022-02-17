@@ -1,0 +1,6 @@
+module Pods_SimpleForm_SimpleFormTests {
+  umbrella header "Pods-SimpleForm-SimpleFormTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

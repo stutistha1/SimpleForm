@@ -1,0 +1,6 @@
+module Pods_SimpleForm {
+  umbrella header "Pods-SimpleForm-umbrella.h"
+
+  export *
+  module * { export * }
+}
